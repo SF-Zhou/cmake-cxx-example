@@ -1,0 +1,13 @@
+[workspace]
+members = ["src/demo", "src/hello"]
+resolver = "2"
+
+[workspace.package]
+authors = ["SF-Zhou <sfzhou.scut@gmail.com>"]
+edition = "2021"
+license = "MIT"
+
+[profile.release-cmake]
+debug = true
+inherits = "release"
+lto = true
